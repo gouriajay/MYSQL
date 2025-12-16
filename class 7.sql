@@ -3,7 +3,6 @@ SELECT * FROM `students`
 SELECT course,COUNT(*) FROM students GROUP BY course;
 SELECT * FROM `students`
 SELECT course,AVG(score)FROM students HAVING AVG(score)>80;
-Expand Requery Edit Explain Profiling Bookmark Database : online course Queried time : 20:30:30
 SELECT name,score FROM students WHERE city IN('Chennai','Mumbai');
 SELECT * FROM students WHERE bonus_points IS NULL;
 SELECT name FROM students WHERE city='Chennai' UNION SELECT name FROM students WHERE city='Mumbai';
